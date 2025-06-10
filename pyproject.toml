@@ -85,6 +85,8 @@ quote-style = "double"
 indent-style = "space"
 line-ending = "auto"
 
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "PT006"]
 
 [tool.mypy]
 warn_return_any = false
@@ -95,4 +97,3 @@ pretty = true
 show_error_codes = true
 implicit_reexport = true
 disable_error_code = ["prop-decorator", "override", "import-untyped"]
-plugins = ["pydantic.mypy"]
