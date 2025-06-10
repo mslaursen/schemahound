@@ -1,18 +1,4 @@
-import click
+from schemahound.cli import main
 
-
-@click.group(
-    help="SchemaHound CLI.",
-    context_settings={"help_option_names": ["-h", "--help"]},
-)
-@click.version_option(package_name="schemahound")
-@click.option("-v", "--verbose", count=True, help="Increase verbosity level.")
-@click.pass_context
-def main(ctx: click.Context, verbose: int) -> None:
-    """SchemaHound CLI entry point."""
-    ctx.ensure_object(dict)
-    ctx.obj["verbose"] = verbose
-
-
-if __name__ in "__main__":
+if __name__ == "__main__":
     main()

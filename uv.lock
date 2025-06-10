@@ -145,7 +145,7 @@ wheels = [
 
 [[package]]
 name = "schemahound"
-version = "0.1.1.dev1+g01bdcd1.d20250610"
+version = "0.1.4.dev1+gab265f5.d20250610"
 source = { editable = "." }
 dependencies = [
     { name = "click" },
